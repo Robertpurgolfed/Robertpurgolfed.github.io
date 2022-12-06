@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #252525;
+  font-size: 1.6rem;
+}
+
+h2 {
+  color: #e7e7e7;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #525252;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 90vh;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+          box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+}
+
+.heading {
+  position: absolute;
+  color: #e7e7e7;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.data-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4rem;
+  width: 90%;
+  height: 90%;
+}
+.data-form label {
+  color: #e7e7e7;
+  font-size: 2rem;
+}
+.data-form input {
+  margin: 0.5rem 0 2rem 0;
+  height: 25px;
+  width: 200px;
+  background-color: #d0d0d0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #ed254e;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  font-size: 2rem;
+  color: #e7e7e7;
+  cursor: pointer;
+}
+
+.score-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 500px;
+  height: 700px;
+  margin-right: 4rem;
+  padding: 2em;
+  border: 1px solid #e7e7e7;
+  background-color: #9191e9;
+  border-radius: 5px;
+}
+.score-box h2 {
+  font-size: 3rem;
+}
+.score-box p {
+  width: 100%;
+  font-size: 2rem;
+  color: #e7e7e7;
+}/*# sourceMappingURL=main.css.map */

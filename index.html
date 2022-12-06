@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Współczynnik degradacji</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3451a7a433.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/css/main.min.css">
+</head>
+
+<body>
+    <section class="data-insert" id="data-insert">
+        <div class="container">
+            <h2>Obliczanie współczynnika degradacji</h2>
+            <form class="data-form">
+                <div class="wrapper">
+                    <label for="frequency">Częstotliwość robocza [Hz]:</label>
+                    <input type="number" id="frequency" class="input-frequency">
+                    <label for="distance">Odległość między radiostacjami [m]:</label>
+                    <input type="number" id="distance" class="input-distance">
+                    <label for="pspower">Moc nadajnika radiostacji zakłócającej Ps [W]:</label>
+                    <input type="number" id="pspower" class="input-pspower">
+                    <label for="pnpower">Moc nadajnika Pn [W]:</label>
+                    <input type="number" id="pnpower" class="input-pnpower">
+                    <label for="height">Wysokość anteny odbiorczej i nadawczej [m]:</label>
+                    <input type="number" id="height" class="input-height">
+                </div>
+                <div class="wrapper">
+                    <label for="gain">Zysk energetyczny anten Go Gs:</label>
+                    <input type="number" id="gain" class="input-gain">
+                    <label for="jammdistance">Odległość do stacji zakłóceń Rz [m]:</label>
+                    <input type="number" id="jammdistance" class="input-jammdistance">
+                    <label for="transmitpower">Moc nadajnika Pz [W]:</label>
+                    <input type="number" id="transmitpower" class="input-transmitpower">
+                    <label for="jammheight">Wysokość anteny zakłócającej [m]:</label>
+                    <input type="number" id="jammheight" class="input-jammheight">
+                    <label for="jammgain">Zysk energetyczny anteny zakłócającej:</label>
+                    <input type="number" id="jammgain" class="input-jammgain">
+                </div>
+                <div class="wrapper border">
+                    <h3>Przykładowe dane do formularza</h3>
+                    <p class="example">Częstotliwość robocza [Hz]: 32000000</p>
+                    <p class="example">Odległość między radiostacjami [m]: 4000</p>
+                    <p class="example">Moc nadajnika radiostacji zakłócającej Ps [W]: 15</p>
+                    <p class="example">Moc nadajnika Pn [W]: 5</p>
+                    <p class="example">Wysokość anteny odbiorczej i nadawczej [m]: 3</p>
+                    <p class="example">Zysk energetyczny anten Go Gs: 1</p>
+                    <p class="example">Odległość do stacji zakłóceń Rz [m]: 40000</p>
+                    <p class="example">Moc nadajnika Pz [W]: 1000</p>
+                    <p class="example">Wysokość anteny zakłócającej [m]: 10</p>
+                    <p class="example">Zysk energetyczny anteny zakłócającej: 7</p>
+                    <button class="fill-btn" type="button">Uzupełnij</button>
+                </div>
+            </form>
+            <p class="alert">Musisz uzupełnić wszystkie pola!</p>
+            <button class="submit-btn" type="button">Oblicz</button>
+        </div>
+    </section>
+    <section class="scores" id="scores">
+        <div class="container">
+            <h2>Wyniki:</h2>
+            <div class="score-box">
+                <p>Długość fali: <span class="output-wavelength"></span></p>
+                <p>Wzniesienie pozorne: <span class="output-hm"></span></p>
+                <p>Hn*Ho: <span class="output-hnho"></span></p>
+                <p>Rodzaj propagacji: <span class="output-propagation-type"></span></p>
+                <p>Odległość horyzontu radiowego: <span class="output-dh"></span></p>
+                <p>Natężenie pola elektromagnetycznego: <span class="output-em"></span></p>
+                <p>Moc sygnału Po: <span class="output-po"></span></p>
+                <p class="distinguish">Współczynnik degradacji: <span class="output-kd"></span></p>
+                <p>Zasięg zakłóceń Rz: <span class="output-rz"></span></p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__text">© <span class="footer__year"></span> WAT Robert Purgoł | robertpurgol.fed@gmail.com</p>
+    </footer>
+    <script src="/dist/js/main.min.js"></script>
+</body>
+
+</html>
